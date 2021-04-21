@@ -17,13 +17,14 @@
            }
            .ramble_on {
             display: grid;
-            grid-template-columns: 180px 500px 380px;
+            grid-template-columns: 180px 500px auto;
             grid-gap: 5px;
+            column-gap: 10px;
             background-color: white;
             padding: 10px;
            }
            .ramble_on > div {
-            text-align: center;
+            text-align: left;
             padding: 10px ;
             font: 13px arial, sans-serif;
            }
@@ -42,7 +43,8 @@
             width: 100%;
             height: 25px;
             padding: 1px 8px;
-            border: 1px solid #d9d9d9
+            border: 1px solid #d9d9d9;
+            justify-content: left;
         
            }
            #paralelepipedo {
@@ -78,6 +80,10 @@
             font: 16px arial, sans-serif;
             padding: 18px;
            }
+           .adv_hints {
+               justify-content: left;
+           }
+           
         </style>
     </head>
     <body>
@@ -97,33 +103,34 @@
                 <div>To do this in the search box.</div>
             </div> 
             <form action="https://google.com/search">   
-            <div class="ramble_on">  
-                <div>all these words:</div>
-                <div><input class="swan_lake" value="" autofocus name="as_q" type="text"></div>
-                <div>Type the important words: tri-colour rat terrier</div>
-                
-                <div>this exact word or phrase:</div>
-                <div><input class="swan_lake" value=""  name="as_epq" type="text"></div>
-                <div>Put exact words in quotes: "rat terrier"</div>
-                
-                <div>any of these words:</div>  
-                <div><input class="swan_lake" value=""  name="as_oq" type="text"></div>
-                <div>Type OR between all the words you want: miniature OR standard</div>
-                
-                <div>none of these words:</div>
-                <div><input class="swan_lake" value=""  name="as_eq" type="text"></div>
-                <div>Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</div> 
-                <div></div>
-                <div></div>
-                <div><input type="submit" class="btn" value="Advanced Search"></div>
-            </div>
-            <hr color="#f1f1f1" size="2">
-        
-            <h1>You can also...</h1>
-            <a class="final" href="https://support.google.com/websearch/answer/2466433?visit_id=637543098951798500-4001522990&p=adv_pages_similar&hl=en&rd=1">Find pages that are similar to a URL</a><br>
-            <a class="final" href="https://support.google.com/websearch/answer/54068?p=adv_pages_visited&hl=en&visit_id=637543098951798500-4001522990&rd=1">Search pages that you've visited</a><br>
-            <a class="final" href="https://support.google.com/websearch/answer/2466433?visit_id=637543098951798500-4001522990&p=adv_operators&hl=en&rd=1">Use operators in the search box</a><br>
-            <a class="final" href="https://www.google.com/preferences?hl=en-BR">Customise your search settings</a><br>
+                <div class="ramble_on">  
+                    <div>all these words:</div>
+                    <div><input class="swan_lake" value="" autofocus name="as_q" type="text"></div>
+                    <div class="adv_hints">Type the important words: tri-colour rat terrier</div>
+                    
+                    <div>this exact word or phrase:</div>
+                    <div><input class="swan_lake" value=""  name="as_epq" type="text"></div>
+                    <div class="adv_hints">Put exact words in quotes: "rat terrier"</div>
+                    
+                    <div>any of these words:</div>  
+                    <div><input class="swan_lake" value=""  name="as_oq" type="text"></div>
+                    <div class="adv_hints">Type OR between all the words you want: miniature OR standard</div>
+                    
+                    <div>none of these words:</div>
+                    <div><input class="swan_lake" value=""  name="as_eq" type="text"></div>
+                    <div class="adv_hints">Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</div> 
+                    <div></div>
+                    <div></div>
+                    <div><input type="submit" class="btn" value="Advanced Search"></div>
+                </div>
+                <hr color="#f1f1f1" size="2">
+            
+                <h1>You can also...</h1>
+                <a class="final" href="https://support.google.com/websearch/answer/2466433?visit_id=637543098951798500-4001522990&p=adv_pages_similar&hl=en&rd=1">Find pages that are similar to a URL</a><br>
+                <a class="final" href="https://support.google.com/websearch/answer/54068?p=adv_pages_visited&hl=en&visit_id=637543098951798500-4001522990&rd=1">Search pages that you've visited</a><br>
+                <a class="final" href="https://support.google.com/websearch/answer/2466433?visit_id=637543098951798500-4001522990&p=adv_operators&hl=en&rd=1">Use operators in the search box</a><br>
+                <a class="final" href="https://www.google.com/preferences?hl=en-BR">Customise your search settings</a><br>
+            </form>
         </div>            
     </body>
 </html>    
