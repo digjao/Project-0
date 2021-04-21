@@ -4,70 +4,80 @@
         <title>Search</title>
         <style>
             #container {
-				text-align: center;	
-				padding: 50px;     
+			text-align: center;	
+			padding: 50px;     
 		       }
             img {
-				max-height: 100%;
-				max-width: 100%;
-				width: auto;
-				/* position: absolute; */
+			max-height: 100%;
+			max-width: 100%;
+			width: auto;
+			/* position: absolute; */
             }
             .buttons {
-				padding: 20px;
-				cursor: pointer;
-				text-align: center;
+			padding: 20px;
+			cursor: pointer;
+			text-align: center;
 						}	
             .bar {
-				height: 40px;
-				width: 582px;
-				border-radius: 50px;
-				border-width: thin;
-				border: 1px solid rgba(170,170,170,0.55);
+			height: 40px;
+			width: 582px;
+			border-radius: 50px;
+			border-width: thin;
+			border: 1px solid rgba(170,170,170,0.55);
+			font-size: 20px;
+			background-image: url(lupa.png);
+			background-repeat: no-repeat;
+			background-position-x: 8px;
+			background-position-y: 9px;
+			padding-left: 40px;
+				
+
 			}
 			.bar:focus {
-				outline: none;
+			outline: none;
 			}			      		
 			.bar:hover { 
-				border: groove;
+			border: groove;
 			}							
 
 			#pes {
-				width: 200px;
-				height: 1px;
-				padding: 20px;
-				float: right;
-				color: black;
-				cursor: pointer;
-				font-size: 14px;
-				font-family: arial, sans-serif;
+			width: 200px;
+			height: 1px;
+			padding: 20px;
+			float: right;
+			color: black;
+			cursor: pointer;
+			font-size: 14px;
+			font-family: arial, sans-serif;
 					}
 			.btn {
-					width: 140px;
-					height: 36px;
-					background-color: #f8f9fa;
-					border:none;
-					font-family: arial, sans-serif;
-					font-size: 14px;
-				}	
+			width: 140px;
+			height: 36px;
+			background-color: #f8f9fa;
+			border:none;
+			font-family: arial, sans-serif;
+			font-size: 14px;
+			padding:3px;
+				}
+	
 
 
         </style>    
     </head>
     <body>
 		<div id="pes">
-			<a href="https://www.google.com.br/imghp?hl=pt-BR&ogbl">Images</a>&nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="https://www.google.com/advanced_search">Advanced Research</a>
+			<a href="Google Images.html">Images</a>&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="Google Advanced Search.html">Advanced Research</a>
 		</div>
         <div id="container">
 			<img src="google-logo.png" alt="google"><br><br>
-            <form action="https://google.com/search">
-			<input class="bar" type="text" name="q"><br><br>
-			<div class="buttons">   
-				<input class="btn" type="submit" value="Google Search">&nbsp;&nbsp;&nbsp;&nbsp;
-				<input class="btn" type="submit" value="im feeling lucky">
-			</div>				
-            </form>
+			<form action="https://google.com/search">
+				<input class="bar" type="text" name="q"><br><br>
+				<div class="buttons">   
+					<input class="btn" type="submit" value="Google Search">&nbsp;&nbsp;&nbsp;&nbsp;
+					<input class="btn" type="submit" value="im feeling lucky">
+				</div>				
+				</form>
         </div>     
     </body>
-</html>
+</html> 
